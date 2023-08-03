@@ -1,19 +1,41 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+<link href="~/Content/contact_style.css" rel="stylesheet" />
 <main aria-labelledby="title">
     <h2 id="title">@ViewBag.Title.</h2>
     <h3>@ViewBag.Message</h3>
+    <br />
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+    <table>
+        <thead>
+            <tr>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Support</th>
+                <th>Marketing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One Microsoft Way Redmond, WA 98052-6399</td>
+                <td>425.555.0100</td>
+                <td><a href="mailto:Support@example.com">Support@example.com</a></td>
+                <td><a href="mailto:Marketing@example.com">Marketing@example.com</a></td>
+            </tr>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+        </tbody>
+    </table>
+
+    @*<address>
+            One Microsoft Way<br />
+            Redmond, WA 98052-6399<br />
+            <abbr title="Phone">P:</abbr>
+            425.555.0100
+        </address>
+
+        <address>
+            <strong>Support:</strong>   Support@example.com</a><br />
+            <strong>Marketing:</strong>
+        </address>*@
 </main>
